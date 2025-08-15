@@ -1,0 +1,92 @@
+/* Casa Mágico - estilos personalizados (sobre Bootstrap) */
+:root {
+  --cm-primary: #ff6f61;
+  --cm-accent: #ffd166;
+  --cm-success: #06d6a0;
+  --cm-bg: #fffaf5;
+  --cm-text: #333333;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+  background: var(--cm-bg);
+  color: var(--cm-text);
+  line-height: 1.6;
+}
+
+.navbar {
+  background: var(--cm-primary);
+}
+.navbar .navbar-brand, .navbar .nav-link, .navbar .navbar-toggler { color: #fff !important; }
+.navbar .nav-link.active { font-weight: 700; text-decoration: underline; text-underline-offset: .25rem; }
+
+.btn-cm-primary {
+  background: var(--cm-primary);
+  color: #fff;
+}
+.btn-cm-accent {
+  background: var(--cm-accent);
+  color: #333;
+}
+.btn-cm-success {
+  background: var(--cm-success);
+  color: #fff;
+}
+
+.hero-caption {
+  background: rgba(0,0,0,.45);
+  color: #fff;
+  padding: .75rem 1rem;
+  border-radius: .5rem;
+}
+
+.section-title {
+  font-family: 'Fredoka', cursive;
+}
+
+.card-product img {
+  object-fit: cover;
+  width: 100%;
+  height: 180px;
+  border-top-left-radius: .5rem;
+  border-top-right-radius: .5rem;
+}
+
+footer {
+  background: var(--cm-primary);
+  color: #fff;
+}
+
+.badge-sale {
+  background: var(--cm-success);
+  color: #235726;
+  font-weight: 700;
+}
+
+.form-control:focus, .form-select:focus {
+  border-color: var(--cm-primary);
+  box-shadow: 0 0 0 .2rem rgba(255,111,97,.25);
+}
+
+.category-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-top-left-radius: .5rem;
+  border-top-right-radius: .5rem;
+}
+
+.category-card .card-body h5 {
+  font-family: 'Fredoka', cursive;
+}
+
+@media (min-width: 768px) {
+  .carousel-item img.hero-img {
+    height: 520px;
+    object-fit: cover;
+  }
+}
